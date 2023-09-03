@@ -1,0 +1,443 @@
+body 
+	font-family: "Roboto",sans-serif 
+	position: relative 
+nav 
+	background: #212121 
+	padding: 11px 0 
+	width: 100%
+	.hamburger
+		display: none
+.menu 
+	padding: 0 70px 
+	margin-bottom: 0px 
+	display: flex 
+	justify-content: space-between 
+	align-items: center 
+	&_item
+		text-align: center 
+		display: flex 
+		align-items: center 
+		padding-right: 33px 
+		border-right: 2px dotted #000 
+		line-height: 28px
+		&:last-child
+			border-right: none
+		a 
+			font-weight: 300 
+			font-size: 15px 
+			list-style: none 
+			color: #fff 
+			text-decoration: none 
+
+.subheader 
+	height: 84px 
+	background: rgba(0,0,0,.6) 
+	.subheader_logo 
+		display: block 
+		max-width: 100% 
+.subheader_row 
+	padding: 19px 0 
+.subheader_logo_text 
+	color: #fff 
+	font-style: normal 
+	font-weight: 100 
+	font-size: 13px 
+.subheader_tel 
+	text-align: right 
+.subheader_tel_descr 
+	color: #fff 
+	font-style: normal 
+	font-weight: 300 
+	font-size: 12px 
+	line-height: 14px 
+.subheader_tel_num 
+	text-decoration: none 
+	font-weight: 400 
+	font-size: 22px 
+	text-transform: uppercase 
+	color: #fff 
+.subheader_tel_xs
+	display: none
+.subheader_button 
+	width: 172px 
+	height: 46px 
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%) 
+	border-radius: 4px 
+	border: none 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 14px 
+	line-height: 30px 
+	text-align: center 
+	text-transform: uppercase 
+	color: #fff 
+.partners 
+	position: absolute 
+	width: 100% 
+	min-height: 800px 
+	top: 50px 
+	text-align: center 
+	padding-top: 152px 
+	padding-bottom: 185px 
+	background: url(../img/uber_bg.png) center center/cover no-repeat 
+	z-index: -1 
+.company 
+	font-weight: 900 
+	font-size: 60px 
+	line-height: 60px 
+	text-transform: uppercase 
+	color: #fff 
+.company_subheader 
+	margin-bottom: 0 
+	font-weight: 700 
+	font-size: 36px 
+	line-height: 36px 
+	text-transform: uppercase 
+	color: #fff 
+.company_descr 
+	margin-top: 38px 
+	font-weight: 400 
+	font-size: 20px 
+	line-height: 30px 
+	color: #fff 
+.company_button 
+	margin-top: 116px 
+	width: 259px 
+	height: 63px 
+	background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%) 
+	box-shadow: inset 0px -4px 0px rgba(0,0,0,.12) 
+	border-radius: 4px 
+	border: none 
+	text-transform: uppercase 
+	font-weight: 400 
+	font-size: 18px 
+	line-height: 63px 
+	color: #fff 
+.reasons 
+	margin-top: 800px 
+	padding-top: 24px 
+.label 
+	width: 115px 
+	height: 27px 
+	background: #000 
+	margin: 0 auto 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 11px 
+	line-height: 27px 
+	text-transform: uppercase 
+	text-align: center 
+	color: #fff 
+.reason_item_round 
+	min-width: 116px 
+	height: 116px 
+	margin-right: 25px 
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	border-radius: 50% 
+	background: #1eacc7 
+.h2_title 
+	font-weight: 700 
+	font-size: 38px 
+	line-height: 38px 
+	text-align: center 
+	display: block 
+	margin: 0 auto 
+	margin-top: 33px 
+	text-transform: uppercase 
+.reason_descr_wrapper 
+	width: 370px 
+	font-size: 15px 
+	font-weight: 300 
+	line-height: 21px 
+	letter-spacing: 0px 
+	text-align: left 
+	min-height: 116px 
+	&.right_wrapper 
+		width: 340px 
+		&.text_up 
+			align-self: start 
+.reason_item 
+	height: 150px 
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	margin-top: 30px 
+	&.bottom 
+		align-items: flex-start 
+.reason_item_title 
+	font-size: 17px 
+	font-weight: 400 
+	line-height: 21px 
+	letter-spacing: 0px 
+	text-align: left 
+	color: #1eacc7 
+.reason_item_descr 
+	font-size: 15px 
+	font-weight: 300 
+	line-height: 21px 
+	letter-spacing: 0px 
+	text-align: left 
+	color: #202020 
+.right_col 
+	margin-left: 30px 
+	padding: 0 
+.app 
+	min-height: 864px 
+	padding-top: 48px 
+	padding-bottom: 80px 
+	background: url(../img/mobile_bg.png) center center/cover no-repeat 
+.h2_subtitle 
+	margin: 0 auto 
+	text-align: center 
+	font-style: normal 
+	font-weight: 400 
+	font-size: 17px 
+	color: #222 
+.app_items 
+	padding-top: 30px 
+	.app_item 
+		padding: 0 
+		width: 320px 
+		height: 280px 
+		margin: 0 auto 
+		background-color: #000 
+		margin-bottom: 20px 
+.i1 
+	background: url(../img/card1.png) center center/cover no-repeat 
+.i2 
+	background: url(../img/card2.png) center center/cover no-repeat 
+.i3 
+	background: url(../img/card3.png) center center/cover no-repeat 
+.i4 
+	background: url(../img/card4.png) center center/cover no-repeat 
+.i5 
+	background: url(../img/card5.png) center center/cover no-repeat 
+.i6 
+	background: url(../img/card6.png) center center/cover no-repeat 
+.button_wrapper 
+	display: flex 
+	height: 63px 
+	align-items: top 
+	justify-content: center 
+.plus 
+	display: block 
+.app_item_button 
+	display: flex 
+	width: 29px 
+	height: 29px 
+	background-color: #000 
+	border: none 
+	border-radius: 50% 
+	align-items: center 
+	justify-content: center 
+.app_item_title 
+	height: 217px 
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	.app_item_title_text 
+		text-align: center 
+		text-transform: uppercase 
+		font-weight: 400 
+		font-size: 24px 
+		line-height: 31px 
+		color: #fff 
+section 
+	&.choise 
+		position: relative 
+.black_bg 
+	background-color: #070716 
+	min-height: 502px 
+	padding-top: 59px 
+.white_bg 
+	background: url(../img/Подложка.png) center center/cover no-repeat 
+	min-height: 397px 
+	.h2_subtitle 
+		padding-top: 211px 
+		font-weight: 300 
+		font-size: 17px 
+.car_image 
+	display: block 
+	position: absolute 
+	top: 234px 
+	left: 50% 
+	margin-left: -380px 
+.cw 
+	color: #fff 
+.cw_label 
+	color: #000 
+	background-color: #fff 
+.requires_and_conditions 
+	min-height: 919px 
+	padding-top: 66px 
+.reuirements 
+	margin-top: 40px 
+.conditions 
+	margin-top: 40px 
+.condition_item 
+	display: flex 
+	flex-direction: column 
+	align-items: center 
+	justify-content: start 
+.condition_item_list 
+	margin-top: 5px 
+	display: block 
+	width: 450px 
+	list-style: none 
+	font-weight: 300 
+	font-size: 17px 
+	line-height: 24px 
+	text-indent: -21px 
+	list-style-type: none 
+	list-style-position: outside 
+.condition_item_list_item 
+	margin-top: 5px 
+	&::before 
+		position: relative 
+		top: 6px 
+		left: -10px 
+		content: url(../icons/check_blue.png) 
+	&.r 
+		&::before 
+			content: url(../icons/check_red.png) 
+			position: relative 
+			top: 6px 
+			left: -10px 
+.t_red 
+	color: #ff5656 
+.condition_item_title 
+	align-self: flex-start 
+	padding-left: 100px 
+	font-weight: 400 
+	font-size: 22px 
+.t_blue 
+	color: #1ca8c3 
+.salary 
+	font-weight: 300 
+	font-size: 17px 
+	text-indent: 0 
+	color: #1ca8c3 
+	display: block 
+	position: relative 
+	left: -30px 
+	margin-top: 20px 
+.hello_world 
+	position: relative 
+	min-height: 717px 
+	padding-bottom: 22px 
+	background: url(../img/world_bg.png) center center/contain no-repeat 
+	.wrapper 
+		padding-top: 48px 
+.podlozka 
+	position: absolute 
+	z-index: -1 
+	width: 100% 
+	height: 100% 
+	background-color: #080816 
+.view_all 
+	width: 400px 
+	text-decoration: none 
+	display: block 
+	position: absolute 
+	font-weight: 400 
+	font-size: 15px 
+	color: #1fbad6 
+	text-transform: uppercase 
+	text-align: center 
+	bottom: 50px 
+	left: 50% 
+	margin-left: -200px 
+footer 
+	padding: 15px 32px 25px 
+	min-height: 144px 
+	position: relative 
+	.footer_links 
+		margin-top: 35px 
+		display: flex 
+		justify-content: space-between 
+		width: 155px 
+		.links_item 
+			width: 35px 
+			height: 35px 
+			background-color: #070716 
+			display: flex 
+			justify-content: center 
+			align-items: center 
+			border-radius: 50% 
+			cursor: pointer 
+	.footer_menu 
+		width: 600px 
+		position: absolute 
+		top: 30px 
+		left: 50% 
+		margin-left: -300px 
+		.sub_menu_items 
+			margin: 0 
+			padding: 0 
+			display: flex 
+			justify-content: space-between 
+			list-style: none 
+			.sub_menu_item 
+				display: block 
+				.sub_menu_item_text 
+					text-transform: uppercase 
+					font-weight: 300 
+					font-size: 11px 
+					color: #999 
+					text-decoration: none 
+		.main_menu_items 
+			margin: 0 
+			margin-bottom: 5px 
+			font-weight: 300 
+			font-size: 15px 
+			padding: 0 20px 
+			display: flex 
+			justify-content: space-between 
+			list-style: none 
+			.main_menu_item 
+				display: block 
+				.main_menu_item_text 
+					text-transform: uppercase 
+					font-weight: 400 
+					font-size: 15px 
+					color: #070716 
+					text-decoration: none 
+		.blue_stripe 
+			position: relative 
+			top: -15px 
+			margin: 0 auto 
+			width: 301px 
+			height: 6.76px 
+			background: #1fbad6 
+	.footer_stores_buttons 
+		position: absolute 
+		right: 32px 
+		top: 50px
+		display: flex
+		width: 20%
+		justify-content: space-between
+	.footer_stores_button
+		img
+			display: block
+			width: 120px
+			height: 40px
+	.language 
+		width: 400px 
+		text-decoration: none 
+		display: block 
+		position: absolute 
+		font-weight: 400 
+		font-size: 15px 
+		color: #1fbad6 
+		text-transform: uppercase 
+		text-align: center 
+		bottom: 20px 
+		left: 50% 
+		margin-left: -200px 
+		cursor: pointer 
+.only_xs
+	display: none
+.car_image_only_xs
+	display: none

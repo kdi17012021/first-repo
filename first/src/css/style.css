@@ -1,0 +1,13 @@
+body{
+    background-color: aliceblue;
+}
+
+.chapter {
+    color: rgb(173, 44, 44);
+}
+#third {
+    color: blueviolet;
+}
+h2{
+    text-align: center; ;
+}

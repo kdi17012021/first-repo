@@ -1,0 +1,379 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family:  "Roboto", sans-serif;
+}
+
+body{
+    width: 100vw;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    width: 60vw;
+    text-align: center;
+}
+
+
+.first{
+    width: 100vw;
+    height: 800px;
+    background-image: url(/sova/src/img/tel_v_rukah.png);
+    background-size: cover;
+    color: #ffffff;
+
+
+}
+
+
+
+#wpi {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    
+}
+
+.t1{
+    display: inline-block;
+font-size: 4VW;
+line-height: 24px;
+font-weight: 900;
+text-transform: uppercase;
+color: #ffffff;
+margin: 50px 15px;
+
+}
+
+.free{
+    font-weight: 700;
+    color: #f9bf3b;
+}
+.t2{
+font-size: 2VW;
+line-height: 24px;
+font-weight: 700;
+text-transform: uppercase;
+color: #f9bf3b;
+margin: 15px auto;
+}
+
+
+.darkness {
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7764355742296919) 14%, rgba(0,0,0,0.7372198879551821) 47%, rgba(0,0,0,0.7708333333333334) 87%, rgba(0,0,0,1) 100%);
+
+}
+    
+.intensiv{
+font-size: 21px;
+line-height: 28px;
+font-weight: 300;
+color: #ffffff;
+margin-top: 30px;
+}
+
+.button{
+    margin: 60px 0px;
+    display: inline-block;
+    width: 321px;
+    height: 80px;
+    background-image: linear-gradient(0.0deg, #2798b9 0%, #3ab6da 100%);
+    border-radius: 5px;
+    box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.17);
+}
+
+.button p {
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.21);
+    color: #ffffff;
+}
+
+.find_out{
+font-size: 15px;
+line-height: 24px;
+font-weight: 100;
+text-transform: uppercase;
+color: #ffffff;
+margin-bottom: 15px;
+}
+
+
+.stripe {
+    display: inline-block;
+    width: 25%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 3vh;
+}
+
+
+.second {
+    background-color: #efefef;
+}
+
+.chto_zdet {
+font-size: 30px;
+line-height: 12px;
+font-weight: 400;
+text-transform: uppercase;
+color: #252525;
+margin-top: 60px;
+margin-bottom: 20px;
+}
+
+.yel_stripe{
+    display: inline-block;
+    margin: 5 auto;
+    width: 217px;
+    height: 4px;
+    background-color: #f9bf3b; 
+}
+ 
+
+.free_2{
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+.soderzhanie{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item {
+    /* margin: 0 20px;
+    vertical-align: middle;
+    display: inline-block; */
+    width: 300px;
+    /* height: 300px; */
+}
+
+.item p{
+    margin-top: 30px;
+}
+
+.item img{
+    width: 100%;
+}
+
+.telka {
+    background-image: url(/sova/src/img/soska.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 10vw;
+    background-position-y: bottom;
+    min-height: 550px;
+}
+
+.optimization{
+    margin-top: 50px;
+    margin-left: auto;
+    position: relative;
+    /* font-size: calc( (100vw - 480px)/(1920 - 480) * (17 - 1) + 1px); */
+    font-size: 20px;
+    /* line-height: calc( (100vw - 480px)/(1920 - 480) * (17 - 1) + 1px); */
+    font-weight: 300;
+    color: #4a4a4a;
+    text-align:justify;
+    width: 36vw;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.blue{
+    font-size: 1.47vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #299cbd;
+}
+
+.optimization p {
+    line-height: 25px;
+    margin-bottom: 1vw;
+}
+
+.you_can{
+    width: 100vw;
+    background-image: url(/sova/src/img/bg1.png);
+    background-size: cover;
+}
+
+.po_okonchanii{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #efefef;
+}
+
+.skills{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+.skill_item{
+    display: inline-block;
+    width: 10vw;
+    position: relative;
+    vertical-align: top;
+}
+
+
+.blue_round{
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-bottom: 20px;
+
+}
+
+.bl1{
+    background-image: url(/sova/src/icons/i1.png);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.bl2{
+    background-image: url(/sova/src/icons/i2.png);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+.bl3{
+    background-image: url(/sova/src/icons/i3.png);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.bl4{
+    background-image: url(/sova/src/icons/i4.png);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+.bl5{
+    background-image: url(/sova/src/icons/i5.png);
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+
+.skill_item p{
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #efefef;
+
+}
+
+.gift{
+    background-color: #efefef;
+}
+
+.gift_img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.bant {
+    position: relative;
+    left: 10px;
+}
+
+.gift_description{
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 400;
+    color: #252525;
+}
+
+.september{
+    background-color: #fff;
+}
+
+/* .komp{
+    margin: 0 auto;
+    position: relative;;
+} */
+
+
+.komp_item1{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+.text_last1{
+    font-size: 30px;
+    line-height: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #252525;
+    margin-bottom: 40px;
+}
+
+.text_last2{
+
+    font-size: 36px;
+    line-height: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #299cbd;
+    margin-bottom: 35px;
+}
+
+.text_last3{
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin-bottom: 50px;
+}
+
+
+footer{
+    background-color: #1a1a1a;
+}
+
+
+.text_footer{
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #888888;
+}
+

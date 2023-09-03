@@ -1,0 +1,262 @@
+body{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+
+
+
+
+nav{
+    background: #212121;
+    padding: 11px 0;
+}
+.menu{
+    padding: 0 70px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_item{
+text-align: center;
+display: flex;
+align-items:center;
+padding-right: 33px;
+/* padding-left: 33px; */
+border-right: 2px dotted black;
+line-height: 28px;
+
+}
+
+.menu .menu_item a{
+/* display: block; */
+font-weight: 300;
+font-size: 15px;
+list-style: none;
+color: #FFFFFF;
+text-decoration: none;
+}  
+
+.subheader{
+ height: 84px;
+ background:rgba(0, 0, 0, 0.6)
+}
+
+.subheader_row{
+    padding: 19px 0;
+}
+.subheader .subheader_logo{
+    display: block;
+    max-width: 100%;
+
+}
+
+.subheader_logo_text{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+   
+}
+
+.subheader_tel{
+    text-align: right;
+}
+
+
+.subheader_tel_descr{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.subheader_tel_num{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.subheader_button{
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    /* box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12); */
+    border-radius: 4px;
+    border:none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 329% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+
+
+.partners{
+    position: absolute;
+    width: 100%;
+    min-height: 800px;
+    top: 50px;
+    text-align: center;
+    padding-top: 152px;
+    padding-bottom: 185px;
+    background: url(../img/uber_bg.png) center center/cover no-repeat;
+    z-index: -1;
+    
+}
+
+
+
+.company{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+ 
+.company_subheader{
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+
+.company_descr{
+    margin-top: 38px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color:#ffffff;
+}
+
+.company_button{
+    margin-top: 116px;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border:none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 63px;
+    color:#FFFFFF;
+
+}
+
+.reasons{
+    margin-top: 800px;
+    padding-top: 24px;
+
+}
+
+.advantages{
+    width: 115px;
+    height: 27px;
+    background: #000000;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reason_item_round{
+    min-width: 116px;
+    height: 116px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:50%;
+    background: #1EACC7;
+    
+}
+
+.reasons_title{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 33px;
+    text-transform: uppercase;
+}
+.reason_descr_wrapper{
+    /* align-self: start; */
+    width: 370px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    min-height: 116px;
+}
+
+
+
+.reason_item{
+    height: 150px;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    margin-top: 30px;
+}
+
+
+
+.reason_item_title{
+font-size: 17px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+color:#1EACC7;
+
+}
+
+.reason_item_descr{
+font-size: 15px;
+font-weight: 300;
+line-height: 21px;
+letter-spacing: 0px;
+text-align: left;
+color:#202020;
+}
+
+
+.reason_descr_wrapper.right_wrapper{
+    width: 340px;
+}
+
+.reason_descr_wrapper.right_wrapper.text_up{
+    align-self: start;
+}
+.reason_item.bottom{
+    align-items:flex-start;
+}
+.right_col{
+    margin-left: 30px;
+    padding: 0;
+}
