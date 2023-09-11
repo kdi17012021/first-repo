@@ -1,3 +1,41 @@
 .promo
-    min-height: 650px
+    min-height: 100vh
     background: url(../img/main.jpg) center (center/cover) no-repeat
+    &__title
+        font-size: 42px
+        font-weight: 700
+        line-height: 42px
+        text-transform: uppercase
+    &__subtitle
+        font-size: 24px
+        font-weight: 500
+        line-height: 24px
+        text-transform: uppercase
+    &__advantages
+        margin-top: 50px
+        display: grid
+        grid-template-columns: 133px 133px 133px
+        justify-content: end
+        &__item
+            &__descr
+                line-height: 1
+                text-align: center
+            &__img
+                display: block
+                margin: 0 auto 20px
+    &__link
+        margin-top: 5px
+        font-size: 16px
+        font-weight: 500
+        a
+            color: #FFF
+            text-decoration-line: underline
+
+
+
+.promo-wrapper
+    text-align: right
+    position: relative
+    height: 60%
+    padding-top: 20vh
+    color: #fff
