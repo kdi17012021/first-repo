@@ -1,0 +1,81 @@
+.catalog-tabs
+    &__title
+        color: #0D0D0D
+        text-align: center
+        font-size: 30px
+        line-height: 45px
+        text-transform: uppercase
+    &__tabs
+        margin: 30px auto
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        width: 650px
+        grid-gap: 10px
+        transform: skew(-25deg)
+        &__tab
+            height: 52px
+            border: 2px #D0D0D0 solid
+            color: #6B6B6B
+            &:hover
+                box-shadow: 3px 3px 5px $main-color
+            &-active
+                background-color: $main-color
+                color: #fff
+                border: none
+            div
+                transform: skew(25deg)
+                font-size: 18px
+                text-transform: uppercase
+                line-height: 50px
+                text-align: center
+    &__items
+        display: grid
+        grid-template-columns: 300px 300px 300px
+        grid-gap: 20px
+        grid-template-rows: 440px
+        &__item
+            border: 2px #D0D0D0 solid
+            padding: 20px
+            &__img
+                display: block
+                margin: 0 auto
+                height: 200px
+                max-width: 100%
+                margin-bottom: 15px
+            &__title
+                color: #0D0D0D
+                text-align: center
+                font-size: 16px
+                font-weight: 700
+                margin-bottom: 10px
+            &__descr
+                text-align: center
+                font-size: 14px
+                margin: 0 auto
+                width: 250px
+                height: 41px
+            &__link
+                display: block
+                margin: 10px auto
+                color: $main-color
+                text-align: center
+                font-size: 14px
+                font-weight: 500
+                text-transform: uppercase
+                text-decoration-line: underline
+            &__footer
+                display: grid
+                grid-template-columns: 1fr 1fr
+                &__old-price
+                    color: #555
+                    font-size: 14px
+                    font-weight: 300
+                    text-decoration: line-through
+                &__new-price
+                    color: #050505
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 20px
+
+            
+
