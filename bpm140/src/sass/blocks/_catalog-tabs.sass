@@ -1,4 +1,5 @@
 .catalog-tabs
+    min-height: 100vh
     &__title
         color: #0D0D0D
         text-align: center
@@ -12,12 +13,15 @@
         width: 650px
         grid-gap: 10px
         transform: skew(-25deg)
+        list-style: none
         &__tab
+            transition: 0.5s all
             height: 52px
             border: 2px #D0D0D0 solid
             color: #6B6B6B
             &:hover
                 box-shadow: 3px 3px 5px $main-color
+                cursor: pointer
             &-active
                 background-color: $main-color
                 color: #fff
@@ -29,13 +33,24 @@
                 line-height: 50px
                 text-align: center
     &__items
-        display: grid
+        display: none
         grid-template-columns: 300px 300px 300px
         grid-gap: 20px
         grid-template-rows: 440px
+        &_active
+            display: grid
         &__item
             border: 2px #D0D0D0 solid
-            padding: 20px
+            padding: 10px 15px
+            position: relative
+            height: 440px
+            hr
+                display: block
+                position: absolute
+                top: 338px
+                z-index: 2
+                width: calc(100% -  30px) 
+                height: 1px
             &__img
                 display: block
                 margin: 0 auto
@@ -55,15 +70,19 @@
                 width: 250px
                 height: 41px
             &__link
+                left: 50%
+                transform: translateX(-50%)
+                position: absolute
+                bottom: 10px
                 display: block
-                margin: 10px auto
                 color: $main-color
-                text-align: center
                 font-size: 14px
                 font-weight: 500
                 text-transform: uppercase
                 text-decoration-line: underline
             &__footer
+                position: absolute
+                bottom: 20px
                 display: grid
                 grid-template-columns: 1fr 1fr
                 &__old-price
@@ -76,6 +95,43 @@
                     font-size: 20px
                     font-weight: 700
                     line-height: 20px
-
+            &__wrapper
+                height: 340px
+            &__wrapper-1
+                opacity: 0
+                transition: 0.5s all
+                transform: rotateY(180deg)
+                height: 340px
+                &_active
+                    opacity: 100
+                    display: block
+                    transform: rotateY(0deg)
+            &__wrapper-2
+                opacity: 0
+                position: relative
+                height: 340px
+                transition: 0.5s all
+                transform: rotateY(180deg) translateY(-100%)
+                &_active
+                    opacity: 100
+                    display: block
+                    transform: rotateY(0deg) translateY(-100%)
+                ul
+                    list-style: none
+                    padding-left: 15px
+                li
+                    position: relative
+                    color: #555
+                    font-weight: 300
+                    line-height: 21px
+                    margin-bottom: 3px
+                    &::before
+                        content: ""
+                        width: 8px
+                        height: 8px
+                        background-color: $main-color
+                        position: absolute
+                        top: 7px
+                        left: -20px
             
 
