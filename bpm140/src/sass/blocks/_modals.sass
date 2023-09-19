@@ -1,0 +1,38 @@
+.shading
+    display: none
+    position: fixed
+    z-index: 5
+    top: 0
+    height: 100vh
+    width: 100vw
+    background-color: rgba(0, 0, 0, .5)
+
+.modal
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: none
+    width: 382px
+    padding: 35px 20px 40px
+    background-color: #F2F2F2
+    &__close
+        position: absolute
+        right: -50px
+        top: -15px
+        font-size: 40px
+        color: $main-color
+        cursor: pointer
+    &__title
+        color: #0D0D0D
+        text-align: center
+        font-size: 19px
+        font-weight: 700
+    &__descr
+        color: #0D0D0D
+        text-align: center
+        font-size: 14px
+        font-weight: 700
+    form
+        margin: 0 auto
+        margin-top: 25px

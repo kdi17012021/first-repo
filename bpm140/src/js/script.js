@@ -26,5 +26,21 @@ $(document).ready(function(){
     toggleSlide('.catalog-tabs__items__item__link_1');
     toggleSlide('.catalog-tabs__items__item__link_2');
 
+    //modals
+
+    $("[data-modal=consultation]").on('click', function (){
+        $('.shading, #consultation').fadeIn('slow');
+    });
+
+    $('.modal__close').on('click', function (){
+        $('.shading, .modal').fadeOut('slow');
+    });
+
+    $('.button_small').each(function(i) {
+        $(this).on('click', function() {
+            $('#buy .modal__descr').text($('.catalog-tabs__items__item__title').eq(i).text());
+            $('.shading, #buy').fadeIn('slow');
+        })
+    });
 
   });
