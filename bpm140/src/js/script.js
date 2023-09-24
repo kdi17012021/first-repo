@@ -43,4 +43,44 @@ $(document).ready(function(){
         })
     });
 
+
+    function validateForm(form){
+        $(form).validate({
+            errorClass: "invalid",
+            rules: {
+                name: "required",
+                phone: {
+                    required: true,
+                    // minlength: 10,
+                    // maxlength: 10
+                },
+                email: {
+                  required: true,
+                  email: true
+                }
+              },
+            messages: {
+                name: "Без имени форма не отправится",
+                email: {
+                  required: "Без email форма не отправится",
+                  email: "Введите адрес типа 'primer@ya.ru'"
+                },
+                phone: {
+                    required:"Форма нужна чтобы собирать телефоны",
+                    // minlength: jQuery.validator.format("Телефон состоит из {0} символов"),
+                    // maxlength: jQuery.validator.format("Телефон состоит из {0} символов"),
+                }
+              }
+            
+        });
+    }
+
+    validateForm("#consultForm");
+    validateForm("#modalForm");
+    validateForm("#buyForm");
+
+
+
+    $('input[name="phone"]').mask("+7 (999) 999-99-99");
+      
   });
