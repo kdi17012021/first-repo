@@ -105,5 +105,45 @@ $(document).ready(function(){
         return false;
     });
 
+
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.up-button').fadeIn();
+        } else {
+            $('.up-button').fadeOut();
+        }
+    });
+
+     // Add smooth scrolling to all links
+    $("a[href=#up]").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 500, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            // window.location.hash = hash;
+        });
+        } // End if
+    });
+
+
+    // $("a[href=#up]").click(function(){
+    //     const _href = $(this).attr("href");
+    //     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    //     return false;
+    // });
+    new WOW().init();
       
   });
